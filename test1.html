@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>User Profile</title>
+</head>
+<body>
+<div class="form-main-wrapper">
+    <div class="form-form-wrapper">
+    <form id="userForm" target="_blank" action="https://formbold.com/s/6vrdM" method="POST">
+        <div class="form-input-wrapp form">
+        <label for="firstname" class="label"> Họ và tên </label>
+        <div>
+            <input
+            type="text"
+            name="firstname"
+            id="firstname"
+            placeholder="Họ"
+            class="input"
+            />
+            <input
+            type="text"
+            name="lastname"
+            id="lastname"
+            placeholder="Tên"
+            class="input"
+            />
+        </div>
+        </div>
+        <div class="form">
+        <label for="age" class="label"> Tuổi </label>
+        <input
+            type="text"
+            name="age"
+            id="age"
+            placeholder="Ví dụ: 25"
+            class="input"
+        />
+        </div>
+        <div class="form">
+        <label for="dob" class="label"> Ngày sinh </label>
+        <input type="date" name="dob" id="dob" class="input" />
+        </div>
+        <div class="form">
+        <label class="label">Giới tính</label>
+        <select class="input" name="occupation" id="occupation">
+            <option value="male">Nam</option>
+            <option value="female">Nữ</option>
+            <option value="others">Khác</option>
+        </select>
+        </div>
+        <div class="form">
+        <label for="email" class="label"> Email </label>
+        <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="ví dụ: example@email.com"
+            class="input"
+        />
+        </div>
+        <div class="form">
+            <label for="address" class="label"> Address </label>
+            <textarea id="address" class="input" placeholder="123 Anywhere St..., Any city, State, Country" name="address" rows="5"></textarea>
+            </div>
+        <button type="button" class="form-btn" onclick="submitForm()">Gửi</button>
+    </form>
+    </div>
+</div>
+<script src="./node.js"></script>
+</body>
+</html>
