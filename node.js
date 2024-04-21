@@ -17,6 +17,7 @@ function submitForm() {
     formboldForm.elements["address"].value = address;
 
     formboldForm.submit();
-
-    location.reload();
+    setTimeout(function() {
+        window.location.reload();
+    }, 1000); 
 }
